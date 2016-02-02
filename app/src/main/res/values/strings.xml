@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ustomScrollView</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">默认情况下，最大的堆是机器的可用内存的一半，比如你的内存是2G，如果集成显卡用掉了256M, 那么 Java 会使用最多 (2048 - 256)  / 2。不过设定最大值，并不表示 eclipse 在运行时就会用到这么多，那只是个最大限制值。我们可以通过类似 -Xms512m  -Xmx1024m 来指定使用最少 512m 最多 1024M。Eclipse 中修改 Eclipse 启动命令行的参数默认是在 eclipse.ini 文件中完成的，你可以打开 eclipse.ini 看一下默认的值有些，也可以通过在 eclipse 快捷方式中的命令行中添加参数来做到，而在快捷方式命令行添加参数时的格式和 eclipse.ini 中一样。追问：非常感谢这么详细的回答，但是我修改eclipse中的ini文件，最大限制值改成了1024m，在eclipse界面中显示出来的最大限制值还是742m，eclipse也重启了，求解答
+追答这个 max 本身并不是表示它能用到的最大值，只是说它当前已经申请了 742m。当 742 不够时会增长，直到 1024m 为止，当 1024m 依然不够用时会触发错误。</string>
+
+</resources>
